@@ -8,4 +8,4 @@ WORKDIR /root
 RUN wget https://bgb.bircd.org/bgb.zip && \
   unzip bgb.zip
 
-COPY ./bgb.conf /vnc/conf.d/bgb.conf
+CMD wine /root/bgb.exe
